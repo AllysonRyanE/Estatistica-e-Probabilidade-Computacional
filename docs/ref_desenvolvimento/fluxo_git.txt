@@ -1,0 +1,51 @@
+Fluxo de trabalho para git:
+
+Seguindo a branch combinada, utilizem os seguintes comandos:
+
+1. Para atualizar seu repositório local:
+> git pull
+Isso baixa as atualizações do repositório remoto e as integra ao seu repositório local;
+
+2. Para criar uma nova branch de trabalho
+
+    2.1 Para novas features:
+    > git checkout -b feature/<nome-da-atividade>
+
+    2.2 Para correções de bugs:
+    > git checkout -b bugfix/<nome-da-atividade>
+
+Observação: Uma branch deve ser responsável por uma única atividade;
+
+
+Após finalizar as modificações na branch de trabalho faça:
+
+3. Adicione as modificações ao staging
+> git add .
+Isso adiciona todas as modificações feitas aos arquivos no staging area, preparando-os para o commit;
+
+4. Commit as modificações feitas
+> git commit -m '<mesangem-de-commit>'
+Isso cria um snapshot das alterações no repositório local com uma mensagem descritiva;
+
+
+5. Retorne para branch main
+> git checkout main
+
+6. Atualize o repositório local
+> git pull
+Isso garante que a branch main esteja atualizada com as últimas alterações do repositório remoto;
+
+7. Faça o merge da branch de trabalho com a main
+> git merge --no-ff feature/<nome-da-atividade>
+
+ou
+
+> git merge --no-ff bugfix/<nome-da-atividade>
+
+
+Observação: Uma mensagem pode aparecer no console, precione 'ctrl + x' para finalizar o merge
+
+8. Atualize o repositório remoto com as novas modificações
+> git push
+Isso envia as alterações mescladas na branch main para o repositório remoto.
+

@@ -12,9 +12,9 @@
   <img align="center" src='https://img.shields.io/badge/release%20date-abr/2023-green' />
 </p>
 
-# Projeto: análise estatística de dados de CPU
+# Projeto: Análise estatística do uso de RAM para renderização de imagem em VR
 
-## 📋 Sobre
+## 📕 Resumo
 
 Este projeto teve como objetivo investigar se o desempenho do processador Intel Core i5-10400 seria suficiente para executar o jogo Red Dead Redemption 2. Foram coletados dados de desempenho do CPU durante a execução do jogo e analisados estatisticamente utilizando bibliotecas Python. A normalidade dos dados foi atestada através do gráfico Q-Q e do valor-p, indicando que a base de dados é uma distribuição normal. Foi realizado um Teste Z para verificar se a média de desempenho do CPU seria considerada ideal, resultando na rejeição da hipótese nula. Portanto, concluiu-se que o processador Intel Core i5-10400 não foi eficiente para executar o jogo de interesse.
 
@@ -25,12 +25,12 @@ project-statistics-and-probability-computing
 ├── README.md
 ├── Relatório Estatística.pdf
 ├── docs
-|  ├── development_reference
-|  |  └── git_work_flow.txt
-|  └── project_material
-|     ├── Especificação_projeto_2022.2.pdf
-|     ├── data_set_group_0.txt
-|     └── template_cisti_2014_pt.docx
+|  ├── ref_desenvolvimento
+|  |  └── fluxo_git.txt
+|  └── material_do_projeto
+|     ├── Especificação_projeto_2024.1.pdf
+|     ├── data_set_group_6_MEMORY.txt
+|     └── TEMPLATE_IEEE_LATEX.zip
 ├── requirements.txt
 └── src
    ├── main.ipynb
@@ -62,7 +62,8 @@ project-statistics-and-probability-computing
 - Matplotlib
 - Seaborn
 
-## ✒️ Autores
+## 🤝 Autores
+Conheça quem faz parte do nosso time
 
-| [<img src="https://avatars.githubusercontent.com/u/99020717?v=4" width=115><br><sub>Douglas Araújo</sub>](https://github.com/thedouglasaraujo) | [<img src="https://avatars.githubusercontent.com/u/109428550?v=4" width=115><br><sub>Hallan Ângelo</sub>](https://github.com/hallanangelo) | [<img src="https://avatars.githubusercontent.com/u/54161035?v=4" width=115><br><sub>Hítalo Nascimento</sub>](https://github.com/HitaloNasc) | [<img src="https://avatars.githubusercontent.com/u/100882928?v=4" width=115><br><sub>Ingrid Freire</sub>](https://github.com/ingridfsl) | [<img src="https://avatars.githubusercontent.com/u/104030171?v=4" width=115><br><sub>Katharian Abrahel</sub>](https://github.com/katharianabrahel) | [<img src="https://avatars.githubusercontent.com/u/86257548?v=4" width=115><br><sub>Renata Santana</sub>](https://github.com/RenataAndradeSnatana) |
+| [<img src="https://avatars.githubusercontent.com/u/115114528?s=400&u=da97e146c53c8b2666a88f74949fc09d5815847c&v=4" width=115><br><sub>Allyson Ryan</sub>](https://github.com/AllysonRyanE) | [<img src="https://avatars.githubusercontent.com/u/80436467?v=4" width=115><br><sub>Jorge Freitas</sub>](https://github.com/jorgelcff) | [<img src="https://avatars.githubusercontent.com/u/94190622?v=4" width=115><br><sub>Lucas Gabriel</sub>](https://github.com/LucasGaab) |
 | :--------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
