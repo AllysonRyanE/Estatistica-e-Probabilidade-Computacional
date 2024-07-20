@@ -16,7 +16,7 @@
 
 ## 📕 Resumo
 
-Este projeto teve como objetivo investigar se o desempenho do processador Intel Core i5-10400 seria suficiente para executar o jogo Red Dead Redemption 2. Foram coletados dados de desempenho do CPU durante a execução do jogo e analisados estatisticamente utilizando bibliotecas Python. A normalidade dos dados foi atestada através do gráfico Q-Q e do valor-p, indicando que a base de dados é uma distribuição normal. Foi realizado um Teste Z para verificar se a média de desempenho do CPU seria considerada ideal, resultando na rejeição da hipótese nula. Portanto, concluiu-se que o processador Intel Core i5-10400 não foi eficiente para executar o jogo de interesse.
+Este projeto teve como objetivo investigar a otimização do consumo de memória RAM partindo de um processo de renderização de imagem do jogo Minecraft executando em um Apple Vision Pro enquanto o mesmo funcionava como um servidor local. Foram coletados os dados de uso da memória durante a execução e analisados estatisticamente utilizando bibliotecas Python e outras ferramentas. A normalidade dos dados foi atestada através do gráfico Q-Q e do valor-p, indicando que a base de dados é uma distribuição normal. Foi realizado um Teste Z para verificar se a média de uso seria considerada ideal, tendo em perspectiva um limite seguro pré estabelecido e relacionado a segurança para contornar superaquecimentos do dispositivo, resultando na rejeição da hipótese nula. Portanto, concluiu-se que o proceso de renderização de imagem não está otimizado o suficiente para adequar-se aos limites de segurança. 
 
 ## 📂 Estrutura do projeto
 
@@ -55,12 +55,14 @@ project-statistics-and-probability-computing
 
 ## 🛠️ Tecnologias utilizadas
 
-- Python 3
-- Jupyter Notebook
-- NumPy
-- SciPy
-- Matplotlib
-- Seaborn
+- Python 3;
+- Jupyter Notebook;
+- NumPy;
+- SciPy;
+- Matplotlib;
+- Seaborn;
+- Statdisk Online;
+- Minitab
 
 ## 🤝 Autores
 Conheça quem faz parte do nosso time
@@ -93,3 +95,4 @@ Conheça quem faz parte do nosso time
   </tr>
 </table>
 
+e
