@@ -1,38 +1,58 @@
-"""Esse módulo contém as representações gráficas dos dados"""
-
-import matplotlib.pyplot as plt 
-import seaborn as sns
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels.api as sm
+from data import data
 
-def get_boxplot(data):
+# Convertendo a lista importado do 'data.py' em um DataFrame para facilitar a manipulação
+df = pd.DataFrame(data, columns=["Memory_Usage_MB"])
+# Configurações de estilo para os gráficos que serão gerados
+sns.set(style="whitegrid")
+
+# Boxplot da utilização de memória
+def boxplot(data):
     """
     Cria o gráfico boxplot
-    Arg: 
+    Arg:
         data: Dados formatados
     Return:
         Criação gráfica do boxplot a partir dos dados inseridos
     """
-    plt.boxplot(data)
-    plt.title("Uso de CPU (%)")
-    plt.ylabel("Uso de CPU (%)")
+    plt.figure(figsize=(12, 12))
+    sns.boxplot(x=data, color='green')
+    # Definindo o título e rótulos dos eixos
+    plt.title("Boxplot da Utilização de Memória (MB)", fontsize=22)
+    plt.xlabel("Utilização de Memória (MB)", fontsize=18)
+    # Aumentando o tamanho da fonte dos valores dos eixos
+    plt.tick_params(axis='x', labelsize=18)
+    plt.tick_params(axis='y', labelsize=18)
+
     return plt.show()
 
-
-def get_histograma(data):
+# Histograma da utilização de memória
+def histograma(data):
     """
     Cria o gráfico histograma
-    Arg: 
+    Arg:
         data: Dados formatados
     Return:
         Criação gráfica em histograma a partir dos dados inseridos
     """
-    ax = sns.histplot(data, kde=True)
-    
+    plt.figure(figsize=(12, 12))
+    sns.histplot(data, bins=30, kde=True, color='blue')
     # Definindo o título e rótulos dos eixos
-    ax.set(title="Uso de CPU (%) X Frequência", xlabel="Uso de CPU (%)", ylabel="Frequência")
+    plt.title("Distribuição da Utilização de Memória (MB)", fontsize=22)
+    plt.xlabel("Utilização de Memória (MB)", fontsize=18)
+    plt.ylabel("Frequência", fontsize=18)
+    # Aumentando o tamanho da fonte dos valores dos eixos
+    plt.tick_params(axis='x', labelsize=18)
+    plt.tick_params(axis='y', labelsize=18)
+
     return plt.show()
 
-def get_linechart(data):
+# Gráfico de Linha da utilização de memória
+def linechart(data):
     """
     Cria o gráfico de linha
     Arg:
@@ -40,11 +60,20 @@ def get_linechart(data):
     Return:
         Criação gráfica do gráfico de linha a partir dos dados inseridos
     """
-    x = []
-    for i in range(len(data)):
-        x.append(i*5)
-    plt.plot(x, data, linewidth=0.9)
-    plt.title("Gráfico temporal do Desempenho da CPU")
-    plt.xlabel('Tempo (s)')
-    plt.ylabel('Uso de CPU (%)')
+    plt.figure(figsize=(12, 12))
+    plt.plot(data, color='purple')
+    # Definindo o título e rótulos dos eixos
+    plt.title("Utilização de Memória ao Longo do Tempo", fontsize=22)
+    plt.xlabel("Amostra", fontsize=18)
+    plt.ylabel("Utilização de Memória (MB)", fontsize=18)
+    # Aumentando o tamanho da fonte dos valores dos eixos
+    plt.tick_params(axis='x', labelsize=18)
+    plt.tick_params(axis='y', labelsize=18)
+
     return plt.show()
+
+
+# Chamando as funções para visualizar as alterações
+#boxplot(df["Memory_Usage_MB"])
+#histograma(df["Memory_Usage_MB"])
+#linechart(df["Memory_Usage_MB"])
