@@ -53,7 +53,7 @@ project-statistics-and-probability-computing
    Espera-se:
    <img src="./src/assets/teste_de_normalidade.png" />
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Principais Tecnologias utilizadas
 
 - Python 3;
 - Jupyter Notebook;
