@@ -18,6 +18,13 @@
 
 Este projeto teve como objetivo investigar a otimização do consumo de memória RAM partindo de um processo de renderização de imagem do jogo Minecraft executando em um Apple Vision Pro enquanto o mesmo funcionava como um servidor local. Foram coletados os dados de uso da memória durante a execução e analisados estatisticamente utilizando bibliotecas Python e outras ferramentas. A normalidade dos dados foi atestada através do gráfico Q-Q e do valor-p, indicando que a base de dados é uma distribuição normal. Foi realizado um Teste Z para verificar se a média de uso seria considerada ideal, tendo em perspectiva um limite seguro pré estabelecido e relacionado a segurança para contornar superaquecimentos do dispositivo, resultando na rejeição da hipótese nula. Portanto, concluiu-se que o proceso de renderização de imagem não está otimizado o suficiente para adequar-se aos limites de segurança. 
 
+## 🔗 Link para acesso do Google Colab
+
+#### [Acesse aqui]( https://colab.research.google.com/drive/1SE8oY_u8fuBRA5dFzV2w4n7PvNyYaWeE?usp=sharing)
+
+## 
+
+
 ## 📂 Estrutura do projeto
 
 ```
