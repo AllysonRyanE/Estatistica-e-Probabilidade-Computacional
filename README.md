@@ -28,9 +28,10 @@ Este projeto teve como objetivo investigar a otimização do consumo de memória
 ## 📂 Estrutura do projeto
 
 ```
-project-statistics-and-probability-computing
+Estatistica-e-Probabilidade-Computacional
 ├── README.md
-├── Relatório Estatística.pdf
+├── LICENSE
+├── RELATORIO_FINAL_G6.pdf
 ├── docs
 |  ├── ref_desenvolvimento
 |  |  └── fluxo_git.txt
