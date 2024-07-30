@@ -28,9 +28,7 @@ Este projeto teve como objetivo investigar a otimização do consumo de memória
 ## 📂 Estrutura do projeto
 
 ```
-project-statistics-and-probability-computing
-├── README.md
-├── Relatório Estatística.pdf
+Estatistica-e-Probabilidade-Computacional
 ├── docs
 |  ├── ref_desenvolvimento
 |  |  └── fluxo_git.txt
@@ -38,17 +36,21 @@ project-statistics-and-probability-computing
 |     ├── Especificação_projeto_2024.1.pdf
 |     ├── data_set_group_6_MEMORY.txt
 |     └── TEMPLATE_IEEE_LATEX.zip
-├── requirements.txt
 └── src
-   ├── main.ipynb
+   ├── assets
    └── modules
-      ├── Funcao_min_max.py
       ├── __init__.py
       ├── data.py
+      ├── data_set_group_6_MEMORY.txt
       ├── graphics.py
-      ├── measure_centrality.py
-      ├── normal_test.py
+      ├── measure.py
+      ├── normal.py
       └── setup.py
+   └── requirements.txt
+├── README.md
+├── LICENSE
+├── RELATORIO_FINAL_G6.pdf
+      
 
 ```
 
