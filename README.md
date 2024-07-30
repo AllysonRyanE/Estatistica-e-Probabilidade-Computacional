@@ -29,17 +29,27 @@ Este projeto teve como objetivo investigar a otimização do consumo de memória
 
 ```
 Estatistica-e-Probabilidade-Computacional
+├── apresentacao
+    └── APRESENTACAO_G6.pdf
 ├── docs
 |  ├── ref_desenvolvimento
 |  |  └── fluxo_git.txt
 |  └── material_do_projeto
 |     ├── Especificação_projeto_2024.1.pdf
-|     ├── data_set_group_6_MEMORY.txt
 |     └── TEMPLATE_IEEE_LATEX.zip
+|     ├── data_set_group_6_MEMORY.txt
 └── src
    ├── assets
+      ├── Boxplot.png
+      ├── ConfiabilidadeDaMedia.png
+      ├── FluxogramaDaAnalise.png
+      .
+      .
+      .
+      └── TesteZ_StatDisk.png
    └── modules
       ├── __init__.py
+      ├── critical-z.py
       ├── data.py
       ├── data_set_group_6_MEMORY.txt
       ├── graphics.py
@@ -47,25 +57,17 @@ Estatistica-e-Probabilidade-Computacional
       ├── normal.py
       └── setup.py
    └── requirements.txt
-├── README.md
 ├── LICENSE
+├── README.md
 ├── RELATORIO_FINAL_G6.pdf
       
 
 ```
 
-## 🚀 Rodando o projeto
-
-1. Abra o notebook em <span>main.ipynb</span>
-2. Execute o Jupyter Notebook
-3. Acompanhe os resultados
-   Espera-se:
-   <img src="./src/assets/teste_de_normalidade.png" />
-
 ## 🛠️ Principais Tecnologias utilizadas
 
 - Python 3;
-- Jupyter Notebook;
+- Google Colab;
 - NumPy;
 - SciPy;
 - Matplotlib;
